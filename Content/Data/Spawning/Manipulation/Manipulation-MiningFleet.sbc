@@ -1,0 +1,37 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MiningFleet_Manipulations</SubtypeId>
+            </Id>
+            <Description>
+
+                [MES Manipulation]
+                
+                [ClearAuthorship:true]
+                
+                [EraseIngameScripts:true]
+                [DisableTimerBlocks:true]
+                [DisableSensorBlocks:true]
+                [ClearGridInventories:true]
+
+                [EnableBlocksWithName:Turret]
+                [AllowPartialNames:true]
+                
+                [UseLootProfiles:true]
+                [LootProfiles:VF_MiningFleet_LootProfile]
+
+                [ChangeTurretSettings:true]
+                [TurretRange:5000]
+                [TurretIdleRotation:false]
+                [TurretTargetNeutrals:true]
+                
+            </Description>
+
+        </EntityComponent>
+
+    </EntityComponents>
+</Definitions>

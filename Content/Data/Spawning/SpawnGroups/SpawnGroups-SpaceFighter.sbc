@@ -1,0 +1,38 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <SpawnGroups>
+
+        <SpawnGroup>
+            <Id>
+                <TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+                <SubtypeId>VF_SpaceFighter</SubtypeId>
+            </Id>
+            <Description>
+
+                [Modular Encounters SpawnGroup]
+
+                [UseRivalAi:true]
+                [RivalAiReplaceRemoteControl:true]
+
+                [ReplenishSystems:true]
+                
+                [SpawnConditionsProfiles:VF_SpaceFighter_SpawnConditions]
+
+            </Description>
+            <IsPirate>true</IsPirate> <!--Do not edit-->
+            <Frequency>1.0</Frequency>
+            <Prefabs>
+                <Prefab SubtypeId="[VF] Space Fighter 01">
+                    <Position>
+                        <X>0.0</X>
+                        <Y>0.0</Y>
+                        <Z>0.0</Z>
+                    </Position>
+                    <Speed>0</Speed>
+                    <Behaviour>VF_SpaceFighter_Behavior</Behaviour>
+                </Prefab>
+            </Prefabs>
+        </SpawnGroup>
+
+    </SpawnGroups>
+</Definitions>

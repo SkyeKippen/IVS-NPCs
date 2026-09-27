@@ -1,0 +1,76 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <SpawnGroups>
+
+        <SpawnGroup>
+            <Id>
+                <TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+                <SubtypeId>VF_MiningFleet</SubtypeId>
+            </Id>
+            <Description>
+
+                [Modular Encounters SpawnGroup]
+
+                [UseRivalAi:true]
+                [RivalAiReplaceRemoteControl:true]
+
+                [ReplenishSystems:true]
+
+                [SpawnConditionsProfiles:VF_MiningFleet_SpawnConditions]
+
+                [ManipulationProfiles:VF_MiningFleet_Manipulations]
+
+            </Description>
+            <IsPirate>true</IsPirate> <!--Do not edit-->
+            <Frequency>1.0</Frequency>
+            <Prefabs>
+                <Prefab SubtypeId="[VF] Heavy Mining Carrier">
+                    <Position>
+                        <X>0.0</X>
+                        <Y>0.0</Y>
+                        <Z>0.0</Z>
+                    </Position>
+                    <Speed>0</Speed>
+                    <Behaviour>VF_MiningShipCommander_Behavior</Behaviour>
+                </Prefab>
+                <Prefab SubtypeId="[VF] Light Mining Drone">
+                    <Position>
+                        <X>-200.0</X>
+                        <Y>0.0</Y>
+                        <Z>0.0</Z>
+                    </Position>
+                    <Speed>0</Speed>
+                    <Behaviour>VF_MiningDrone_Behavior</Behaviour>
+                </Prefab>
+                <Prefab SubtypeId="[VF] Light Mining Drone">
+                    <Position>
+                        <X>200.0</X>
+                        <Y>0.0</Y>
+                        <Z>0.0</Z>
+                    </Position>
+                    <Speed>0</Speed>
+                    <Behaviour>VF_MiningDrone_Behavior</Behaviour>
+                </Prefab>
+                <Prefab SubtypeId="[VF] Light Mining Drone">
+                    <Position>
+                        <X>0.0</X>
+                        <Y>-200.0</Y>
+                        <Z>0.0</Z>
+                    </Position>
+                    <Speed>0</Speed>
+                    <Behaviour>VF_MiningDrone_Behavior</Behaviour>
+                </Prefab>
+                <Prefab SubtypeId="[VF] Light Mining Drone">
+                    <Position>
+                        <X>0.0</X>
+                        <Y>200.0</Y>
+                        <Z>0.0</Z>
+                    </Position>
+                    <Speed>0</Speed>
+                    <Behaviour>VF_MiningDrone_Behavior</Behaviour>
+                </Prefab>
+            </Prefabs>
+        </SpawnGroup>
+
+    </SpawnGroups>
+</Definitions>

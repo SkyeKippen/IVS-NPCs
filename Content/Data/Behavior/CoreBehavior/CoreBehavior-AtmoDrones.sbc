@@ -1,0 +1,29 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_UltraLightAtmoDrone_Behavior</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Behavior]
+                [BehaviorName:Patrol]
+
+                [AutopilotData:VF-UltraLightAtmoDrone-Autopilot]
+                [TargetData:VF-UltraLightAtmoDrone-Target]
+                [WeaponSystem:VF-UltraLightAtmoDrone-Weapons]
+
+                [UseNoTargetTimer:true]
+                [NoTargetTimerTrigger:300]
+                [UsePlayerDistanceTimer:false]
+                [UseRetreatTimer:false]
+                [RetreatDespawnDistance:20000]
+
+            </Description>
+        </EntityComponent>
+
+    </EntityComponents>
+</Definitions>

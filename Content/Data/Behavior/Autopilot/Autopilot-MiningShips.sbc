@@ -1,0 +1,56 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MiningShipCommander_Autopilot</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Autopilot]
+
+                [SlowDownOnWaypointApproach:false]
+                [ExtraSlowDownDistance:500]
+
+                [UseVelocityCollisionEvasion:false]
+                [CollisionEvasionWaypointDistance:300]
+                [CollisionEvasionResumeDistance:100]
+                [CollisionEvasionResumeTime:15]
+
+                [IdealMaxSpeed:40]
+                [IdealMinSpeed:10]
+                [MaxSpeedTolerance:3]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MiningShips_Autopilot</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Autopilot]
+
+                [SlowDownOnWaypointApproach:true]
+                [ExtraSlowDownDistance:500]
+
+                [UseVelocityCollisionEvasion:true]
+                [CollisionEvasionWaypointDistance:300]
+                [CollisionEvasionResumeDistance:100]
+                [CollisionEvasionResumeTime:15]
+
+                [IdealMaxSpeed:40]
+                [IdealMinSpeed:10]
+                [MaxSpeedTolerance:3]
+
+            </Description>
+
+        </EntityComponent>
+
+    </EntityComponents>
+</Definitions>

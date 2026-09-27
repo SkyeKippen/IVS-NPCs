@@ -1,0 +1,35 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_UltraLightAtmoDrone_Autopilot</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Autopilot]
+
+                [SlowDownOnWaypointApproach:true]
+                [ExtraSlowDownDistance:300]
+                
+                [FlyLevelWithGravity:true]
+
+                [WaypointWaitTimeTrigger:30]
+
+                [UseVelocityCollisionEvasion:true]
+                [CollisionEvasionWaypointDistance:300]
+                [CollisionEvasionResumeDistance:100]
+                [CollisionEvasionResumeTime:15]
+
+                [IdealMaxSpeed:50]
+                [IdealMinSpeed:20]
+                [MaxSpeedTolerance:5]
+
+            </Description>
+
+        </EntityComponent>
+
+    </EntityComponents>
+</Definitions>
