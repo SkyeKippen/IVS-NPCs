@@ -18,8 +18,6 @@
 
                 [SpawnConditionsProfiles:VF_UltraLightAtmoDrones_SpawnConditions]
 
-                
-
             </Description>
             <IsPirate>true</IsPirate> <!--Do not edit-->
             <Frequency>1.0</Frequency>

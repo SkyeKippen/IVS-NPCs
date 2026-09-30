@@ -12,9 +12,9 @@
                 [RivalAI Behavior]
                 [BehaviorName:Patrol]
 
-                [AutopilotData:VF-UltraLightAtmoDrone-Autopilot]
-                [TargetData:VF-UltraLightAtmoDrone-Target]
-                [WeaponSystem:VF-UltraLightAtmoDrone-Weapons]
+                [AutopilotData:VF_UltraLightAtmoDrone_Autopilot]
+                [TargetData:VF_UltraLightAtmoDrone_Target]
+                [WeaponSystem:VF_UltraLightAtmoDrone_Weapons]
 
                 [UseNoTargetTimer:true]
                 [NoTargetTimerTrigger:300]

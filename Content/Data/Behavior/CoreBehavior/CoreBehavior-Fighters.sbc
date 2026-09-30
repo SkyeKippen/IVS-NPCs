@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <EntityComponents>
 
@@ -10,8 +10,16 @@
             <Description>
 
                 [RivalAI Behavior]
+                [BehaviorName:Strike]
 
-                [BehaviorName:Fighter]
+                [AutopilotData:VF_SpaceFighter_Autopilot]
+                [TargetData:VF_SpaceFighter_Target]
+                [WeaponSystem:VF_SpaceFighter_Weapons]
+
+                [UseNoTargetTimer:true]
+                [NoTargetTimerTrigger:300]
+                [UsePlayerDistanceTimer:false]
+                [UseRetreatTimer:false]
 
             </Description>
 

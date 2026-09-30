@@ -16,6 +16,7 @@
                 [TargetData:VF_MiningShips_Target]
                 [WeaponSystem:VF_MiningShips_Weapons]
 
+                [Triggers:VF_MiningFleet_Trigger_UnderAttack]
 
             </Description>
         </EntityComponent>

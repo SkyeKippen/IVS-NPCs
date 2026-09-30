@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_SpaceFighter_Autopilot</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Autopilot]
+
+                [IdealMinSpeed:100]
+                [IdealMaxSpeed:200]
+                [MaxSpeedTolerance:10]
+                [SlowDownOnWaypointApproach:false]
+
+                [OffsetSpaceMinDistFromTarget:1500]
+                [OffsetSpaceMaxDistFromTarget:2500]
+                [OffsetRecalculationTime:20]
+
+                [AttackRunDistanceSpace:800]
+                [AttackRunBreakawayDistance:250]
+                [AttackRunOverrideWithDistanceAndTimer:true]
+                [AttackRunOverrideDistance:1000]
+                [AttackRunOverrideTimerTrigger:15]
+                [AttackRunUseCollisionEvasionSpace:false]
+
+                [UseVelocityCollisionEvasion:true]
+                [UseProjectileLeadPrediction:true]
+                [AllowStrafing:false]
+
+                [FlyLevelWithGravity:false]
+                [LevelWithGravityWhenIdle:false]
+
+                [WaypointWaitTimeTrigger:0]
+
+            </Description>
+
+        </EntityComponent>
+
+    </EntityComponents>
+</Definitions>

@@ -34,4 +34,7 @@
     <AdditionalFiles Remove="Content\Data\SBC files can go here" />
     <None Remove="thumb.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\Data\Behavior\Triggers\" />
+  </ItemGroup>
 </Project>
