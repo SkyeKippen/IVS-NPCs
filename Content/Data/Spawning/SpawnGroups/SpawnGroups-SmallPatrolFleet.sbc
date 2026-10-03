@@ -23,7 +23,7 @@
 
             </Description>
             <IsPirate>true</IsPirate> <!--Do not edit-->
-            <Frequency>5.0</Frequency>
+            <Frequency>0</Frequency>
             <Prefabs>
                 <Prefab SubtypeId="[VF] Hammerhead-Class SFF">
                     <Position>
@@ -76,7 +76,7 @@
 
             </Description>
             <IsPirate>true</IsPirate> <!--Do not edit-->
-            <Frequency>5.0</Frequency>
+            <Frequency>20.0</Frequency>
             <Prefabs>
                 <Prefab SubtypeId="[VF] Hammerhead-Class SFF">
                     <Position>
