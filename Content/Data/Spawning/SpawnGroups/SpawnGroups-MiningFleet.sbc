@@ -19,6 +19,7 @@
                 [SpawnConditionsProfiles:VF_MiningFleet_SpawnConditions]
 
                 [ManipulationProfiles:VF_MiningFleet_Manipulations]
+                [ManipulationProfiles:VF_Global_TurretManipulations]
 
             </Description>
             <IsPirate>true</IsPirate> <!--Do not edit-->

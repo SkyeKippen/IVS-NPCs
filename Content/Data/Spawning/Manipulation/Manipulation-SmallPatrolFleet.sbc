@@ -20,11 +20,6 @@
 
                 [EnableBlocksWithName:Turret]
                 [AllowPartialNames:true]
-
-                [ChangeTurretSettings:true]
-                [TurretRange:5000]
-                [TurretIdleRotation:false]
-                [TurretTargetNeutrals:true]
                 
             </Description>
 

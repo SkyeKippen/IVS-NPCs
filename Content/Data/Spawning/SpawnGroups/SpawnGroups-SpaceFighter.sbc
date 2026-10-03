@@ -18,6 +18,8 @@
                 
                 [SpawnConditionsProfiles:VF_SpaceFighter_SpawnConditions]
 
+                [ManipulationProfiles:VF_Global_TurretManipulations]
+
             </Description>
             <IsPirate>true</IsPirate> <!--Do not edit-->
             <Frequency>1.0</Frequency>

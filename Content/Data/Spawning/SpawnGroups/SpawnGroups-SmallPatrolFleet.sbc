@@ -19,6 +19,7 @@
                 [SpawnConditionsProfiles:VF_SmallPatrolFleet_SpawnConditions]
 
                 [ManipulationProfiles:VF_SmallPatrolFleet_Manipulations]
+                [ManipulationProfiles:VF_Global_TurretManipulations]
 
             </Description>
             <IsPirate>true</IsPirate> <!--Do not edit-->
@@ -71,6 +72,7 @@
                 [SpawnConditionsProfiles:VF_SmallPatrolFleet_Cargo_SpawnConditions]
 
                 [ManipulationProfiles:VF_SmallPatrolFleet_Manipulations]
+                [ManipulationProfiles:VF_Global_TurretManipulations]
 
             </Description>
             <IsPirate>true</IsPirate> <!--Do not edit-->

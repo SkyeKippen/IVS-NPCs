@@ -5,22 +5,17 @@
         <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
             <Id>
                 <TypeId>Inventory</TypeId>
-                <SubtypeId>VF_MediumPatrolFleet_Manipulations</SubtypeId>
+                <SubtypeId>VF_Global_TurretManipulations</SubtypeId>
             </Id>
             <Description>
 
                 [MES Manipulation]
-                
-                [ClearAuthorship:true]
-                
-                [EraseIngameScripts:true]
-                [DisableTimerBlocks:true]
-                [DisableSensorBlocks:true]
-                [ClearGridInventories:true]
 
-                [EnableBlocksWithName:Turret]
-                [AllowPartialNames:true]
-                
+                [ChangeTurretSettings:true]
+                [TurretRange:5000]
+                [TurretIdleRotation:false]
+                [TurretTargetNeutrals:true]
+
             </Description>
 
         </EntityComponent>

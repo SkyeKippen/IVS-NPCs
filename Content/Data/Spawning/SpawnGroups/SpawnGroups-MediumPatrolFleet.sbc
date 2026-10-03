@@ -19,6 +19,7 @@
                 [SpawnConditionsProfiles:VF_MediumPatrolFleet_SpawnConditions]
 
                 [ManipulationProfiles:VF_MediumPatrolFleet_Manipulations]
+                [ManipulationProfiles:VF_Global_TurretManipulations]
 
             </Description>
             <IsPirate>true</IsPirate> <!--Do not edit-->
