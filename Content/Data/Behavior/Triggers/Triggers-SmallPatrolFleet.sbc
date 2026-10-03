@@ -5,14 +5,16 @@
         <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
             <Id>
                 <TypeId>Inventory</TypeId>
-                <SubtypeId>VF_SmallPatrolFleet_Trigger_AcquiredTarget</SubtypeId>
+                <SubtypeId>VF_SmallPatrolFleet_Trigger_HasTarget</SubtypeId>
             </Id>
             <Description>
 
                 [RivalAI Trigger]
 
                 [UseTrigger:true]
-                [Type:AcquiredTarget]
+                [Type:HasTarget]
+                [MinCooldownMs:2000]
+                [MaxCooldownMs:2000]
                 [MaxActions:-1]
 
                 [Actions:VF_SmallPatrolFleet_Action_EngageTarget]
@@ -38,6 +40,7 @@
 
                 [DisableTriggers:true]
                 [DisableTriggerNames:VF_SmallPatrolFleet_Trigger_ResumePatrol]
+                [DisableTriggerNames:VF_SmallPatrolFleet_Trigger_HasTarget]
 
             </Description>
 
@@ -120,6 +123,9 @@
                 [DisableTriggers:true]
                 [DisableTriggerNames:VF_SmallPatrolFleet_Trigger_ResumePatrol]
 
+                [EnableTriggers:true]
+                [EnableTriggerNames:VF_SmallPatrolFleet_Trigger_HasTarget]
+
             </Description>
 
         </EntityComponent>
@@ -183,6 +189,7 @@
 
                 [DisableTriggers:true]
                 [DisableTriggerNames:VF_SmallPatrolFleet_Trigger_ResumePatrol]
+                [DisableTriggerNames:VF_SmallPatrolFleet_Trigger_HasTarget]
 
             </Description>
 

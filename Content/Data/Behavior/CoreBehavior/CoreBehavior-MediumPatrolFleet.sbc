@@ -22,7 +22,7 @@
                 [UsePlayerDistanceTimer:false]
                 [UseRetreatTimer:false]
 
-                [Triggers:VF_MediumPatrolFleet_Trigger_AcquiredTarget]
+                [Triggers:VF_MediumPatrolFleet_Trigger_HasTarget]
                 [Triggers:VF_MediumPatrolFleet_Trigger_LostTarget]
                 [Triggers:VF_MediumPatrolFleet_Trigger_ResumePatrol]
                 [Triggers:VF_MediumPatrolFleet_Trigger_Reinforce]
@@ -57,7 +57,7 @@
                 [UsePlayerDistanceTimer:false]
                 [UseRetreatTimer:false]
 
-                [Triggers:VF_MediumPatrolFleet_Trigger_AcquiredTarget]
+                [Triggers:VF_MediumPatrolFleet_Trigger_HasTarget]
                 [Triggers:VF_MediumPatrolFleet_Trigger_LostTarget]
                 [Triggers:VF_MediumPatrolFleet_Trigger_ResumePatrol]
                 [Triggers:VF_MediumPatrolFleet_Trigger_Reinforce]
