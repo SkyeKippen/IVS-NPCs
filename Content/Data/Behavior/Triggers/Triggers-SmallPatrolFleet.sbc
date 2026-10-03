@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_SmallPatrolFleet_Trigger_AcquiredTarget</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Trigger]
+
+                [UseTrigger:true]
+                [Type:AcquiredTarget]
+                [MaxActions:-1]
+
+                [Actions:VF_SmallPatrolFleet_Action_EngageTarget]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_SmallPatrolFleet_Action_EngageTarget</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Action]
+
+                [ChangeBehaviorSubclass:true]
+                [NewBehaviorSubclass:HorseFighter]
+
+                [ChangeAutopilotProfile:true]
+                [AutopilotProfile:Secondary]
+
+                [DisableTriggers:true]
+                [DisableTriggerNames:VF_SmallPatrolFleet_Trigger_ResumePatrol]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_SmallPatrolFleet_Trigger_LostTarget</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Trigger]
+
+                [UseTrigger:true]
+                [Type:LostTarget]
+                [MaxActions:-1]
+
+                [Actions:VF_SmallPatrolFleet_Action_StartResumeTimer]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_SmallPatrolFleet_Action_StartResumeTimer</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Action]
+
+                [ResetCooldownTimeOfTriggers:true]
+                [ResetTriggerCooldownNames:VF_SmallPatrolFleet_Trigger_ResumePatrol]
+
+                [EnableTriggers:true]
+                [EnableTriggerNames:VF_SmallPatrolFleet_Trigger_ResumePatrol]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_SmallPatrolFleet_Trigger_ResumePatrol</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Trigger]
+
+                [UseTrigger:false]
+                [Type:NoTarget]
+                [MinCooldownMs:60000]
+                [MaxCooldownMs:60000]
+                [MaxActions:-1]
+
+                [Actions:VF_SmallPatrolFleet_Action_ResumePatrol]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_SmallPatrolFleet_Action_ResumePatrol</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Action]
+
+                [ChangeBehaviorSubclass:true]
+                [NewBehaviorSubclass:CargoShip]
+
+                [ChangeAutopilotProfile:true]
+                [AutopilotProfile:Primary]
+
+                [DisableTriggers:true]
+                [DisableTriggerNames:VF_SmallPatrolFleet_Trigger_ResumePatrol]
+
+            </Description>
+
+        </EntityComponent>
+
+    </EntityComponents>
+</Definitions>

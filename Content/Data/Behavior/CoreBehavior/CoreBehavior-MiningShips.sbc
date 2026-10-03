@@ -24,16 +24,21 @@
         <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
             <Id>
                 <TypeId>Inventory</TypeId>
-                <SubtypeId>VF_MiningDrone_Behavior</SubtypeId>
+                <SubtypeId>VF_SpaceCombatDrone_Behavior</SubtypeId>
             </Id>
             <Description>
 
                 [RivalAI Behavior]
                 [BehaviorName:CargoShip]
 
-                [AutopilotData:VF_MiningShips_Autopilot]
-                [TargetData:VF_MiningShips_Target]
-                [WeaponSystem:VF_MiningShips_Weapons]
+                [FighterEngageDistanceSpace:800]
+
+                [AutopilotData:VF_SpaceCombatDrone_Autopilot_Cruise]
+                [SecondaryAutopilotData:VF_SpaceCombatDrone_Autopilot]
+                [TargetData:VF_SpaceCombatDrone_Target]
+                [WeaponSystem:VF_SpaceCombatDrone_Weapons]
+
+                [Triggers:VF_SpaceCombatDrone_Trigger_HostileDetected]
 
             </Description>
         </EntityComponent>

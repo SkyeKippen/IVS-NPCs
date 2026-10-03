@@ -24,7 +24,7 @@
             <IsPirate>true</IsPirate> <!--Do not edit-->
             <Frequency>1.0</Frequency>
             <Prefabs>
-                <Prefab SubtypeId="[VF] Heavy Mining Carrier">
+                <Prefab SubtypeId="[VF] Humpback-Class SCU">
                     <Position>
                         <X>0.0</X>
                         <Y>0.0</Y>
@@ -33,41 +33,41 @@
                     <Speed>0</Speed>
                     <Behaviour>VF_MiningShipCommander_Behavior</Behaviour>
                 </Prefab>
-                <Prefab SubtypeId="[VF] Light Mining Drone">
+                <Prefab SubtypeId="[VF] SQF-01">
                     <Position>
                         <X>-200.0</X>
                         <Y>0.0</Y>
                         <Z>0.0</Z>
                     </Position>
                     <Speed>0</Speed>
-                    <Behaviour>VF_MiningDrone_Behavior</Behaviour>
+                    <Behaviour>VF_SpaceCombatDrone_Behavior</Behaviour>
                 </Prefab>
-                <Prefab SubtypeId="[VF] Light Mining Drone">
+                <Prefab SubtypeId="[VF] SQF-01">
                     <Position>
                         <X>200.0</X>
                         <Y>0.0</Y>
                         <Z>0.0</Z>
                     </Position>
                     <Speed>0</Speed>
-                    <Behaviour>VF_MiningDrone_Behavior</Behaviour>
+                    <Behaviour>VF_SpaceCombatDrone_Behavior</Behaviour>
                 </Prefab>
-                <Prefab SubtypeId="[VF] Light Mining Drone">
+                <Prefab SubtypeId="[VF] SQF-01">
                     <Position>
                         <X>0.0</X>
                         <Y>-200.0</Y>
                         <Z>0.0</Z>
                     </Position>
                     <Speed>0</Speed>
-                    <Behaviour>VF_MiningDrone_Behavior</Behaviour>
+                    <Behaviour>VF_SpaceCombatDrone_Behavior</Behaviour>
                 </Prefab>
-                <Prefab SubtypeId="[VF] Light Mining Drone">
+                <Prefab SubtypeId="[VF] SQF-01">
                     <Position>
                         <X>0.0</X>
                         <Y>200.0</Y>
                         <Z>0.0</Z>
                     </Position>
                     <Speed>0</Speed>
-                    <Behaviour>VF_MiningDrone_Behavior</Behaviour>
+                    <Behaviour>VF_SpaceCombatDrone_Behavior</Behaviour>
                 </Prefab>
             </Prefabs>
         </SpawnGroup>

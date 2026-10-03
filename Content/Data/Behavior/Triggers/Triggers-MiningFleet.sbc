@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MiningFleet_Trigger_UnderAttack</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Trigger]
+
+                [UseTrigger:true]
+                [Type:Damage]
+                [DamageTypes:Any]
+                [MaxActions:1]
+
+                [Actions:VF_MiningFleet_Action_UnderAttack]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MiningFleet_Action_UnderAttack</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Action]
+
+                [UseChatBroadcast:true]
+                [ChatData:VF_MiningFleet_Chat_UnderAttack]
+
+                [ResetCooldownTimeOfTriggers:true]
+                [ResetTriggerCooldownNames:VF_MiningFleet_Trigger_CallReinforcements]
+
+                [EnableTriggers:true]
+                [EnableTriggerNames:VF_MiningFleet_Trigger_CallReinforcements]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MiningFleet_Chat_UnderAttack</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Chat]
+
+                [UseChat:true]
+                [StartsReady:true]
+                [MaxChats:1]
+                [Author:Mining Fleet Commander]
+                [Color:Red]
+                [ChatMessages:Mayday! Mining fleet is under attack! Requesting immediate assistance!]
+                [BroadcastChatType:Chat]
+                [IgnoreAntennaRequirement:true]
+                [IgnoredAntennaRangeOverride:20000]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MiningFleet_Trigger_CallReinforcements</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Trigger]
+
+                [UseTrigger:false]
+                [Type:Timer]
+                [MinCooldownMs:180000]
+                [MaxCooldownMs:180000]
+                [MaxActions:1]
+
+                [Actions:VF_MiningFleet_Action_CallReinforcements]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MiningFleet_Action_CallReinforcements</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Action]
+
+                [SpawnEncounter:true]
+                [Spawner:VF_MiningFleet_Spawner_PatrolFleet]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MiningFleet_Spawner_PatrolFleet</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Spawn]
+
+                [UseSpawn:true]
+                [SpawningType:CustomSpawn]
+                [SpawnGroups:VF_SmallPatrolFleet]
+                [MaxSpawns:1]
+                [MinDistance:5000]
+                [MaxDistance:6000]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_SpaceCombatDrone_Trigger_HostileDetected</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Trigger]
+
+                [UseTrigger:true]
+                [Type:TargetNear]
+                [TargetDistance:6000]
+                [MaxActions:1]
+
+                [Actions:VF_SpaceCombatDrone_Action_HostileDetected]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_SpaceCombatDrone_Action_HostileDetected</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Action]
+
+                [UseChatBroadcast:true]
+                [ChatData:VF_SpaceCombatDrone_Chat_HostileDetected]
+
+                [ChangeBehaviorSubclass:true]
+                [NewBehaviorSubclass:Fighter]
+
+                [ChangeAutopilotProfile:true]
+                [AutopilotProfile:Secondary]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_SpaceCombatDrone_Chat_HostileDetected</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Chat]
+
+                [UseChat:true]
+                [StartsReady:true]
+                [MaxChats:1]
+                [Author:Combat Drone]
+                [Color:Red]
+                [ChatMessages:Hostile detected.]
+                [BroadcastChatType:Chat]
+                [IgnoreAntennaRequirement:true]
+                [IgnoredAntennaRangeOverride:20000]
+
+            </Description>
+
+        </EntityComponent>
+
+    </EntityComponents>
+</Definitions>

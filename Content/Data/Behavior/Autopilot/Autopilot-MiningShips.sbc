@@ -52,5 +52,72 @@
 
         </EntityComponent>
 
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_SpaceCombatDrone_Autopilot</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Autopilot]
+
+                [IdealMaxSpeed:125]
+                [IdealMinSpeed:75]
+                [MaxSpeedTolerance:5]
+                [SlowDownOnWaypointApproach:true]
+                [ExtraSlowDownDistance:400]
+
+                [OffsetSpaceMinDistFromTarget:600]
+                [OffsetSpaceMaxDistFromTarget:1000]
+                [OffsetRecalculationTime:10]
+
+                [AllowStrafing:true]
+                [StrafeMinDurationMs:2000]
+                [StrafeMaxDurationMs:4000]
+                [StrafeMinCooldownMs:500]
+                [StrafeMaxCooldownMs:1500]
+                [StrafeMinimumTargetDistance:700]
+
+                [UseProjectileLeadPrediction:true]
+
+                [AvoidPlayerCollisions:true]
+                [UseVelocityCollisionEvasion:true]
+                [CollisionEvasionWaypointDistance:600]
+                [CollisionEvasionResumeDistance:300]
+                [CollisionEvasionResumeTime:5]
+                [CollisionEvasionWaypointCalculatedAwayFromEntity:true]
+
+                [FlyLevelWithGravity:false]
+                [LevelWithGravityWhenIdle:false]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_SpaceCombatDrone_Autopilot_Cruise</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Autopilot]
+
+                [SlowDownOnWaypointApproach:false]
+
+                [AvoidPlayerCollisions:true]
+                [UseVelocityCollisionEvasion:true]
+                [CollisionEvasionWaypointDistance:300]
+                [CollisionEvasionResumeDistance:100]
+                [CollisionEvasionResumeTime:15]
+
+                [IdealMaxSpeed:40]
+                [IdealMinSpeed:10]
+                [MaxSpeedTolerance:3]
+
+            </Description>
+
+        </EntityComponent>
+
     </EntityComponents>
 </Definitions>

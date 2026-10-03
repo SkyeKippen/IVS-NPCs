@@ -2,7 +2,7 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Prefabs>
     <Prefab xsi:type="MyObjectBuilder_PrefabDefinition">
-      <Id Type="MyObjectBuilder_PrefabDefinition" Subtype="[VF] Light Mining Drone" />
+      <Id Type="MyObjectBuilder_PrefabDefinition" Subtype="[VF] SQU-01" />
       <CubeGrids>
         <CubeGrid>
           <SubtypeName />
@@ -1017,7 +1017,7 @@
               <AttachedPB>0</AttachedPB>
               <IgnoreAllied>false</IgnoreAllied>
               <IgnoreOther>true</IgnoreOther>
-              <HudText />
+              <HudText>SQU-01</HudText>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_OreDetector">
               <SubtypeName>SmallBlockOreDetector</SubtypeName>
@@ -4182,7 +4182,7 @@ True
               </Blocks>
             </MyObjectBuilder_BlockGroup>
           </BlockGroups>
-          <DisplayName>[VF] - Light Mining Drone</DisplayName>
+          <DisplayName>[VF] SQU-01</DisplayName>
           <DestructibleBlocks>true</DestructibleBlocks>
           <CreatePhysics>false</CreatePhysics>
           <IsRespawnGrid>false</IsRespawnGrid>

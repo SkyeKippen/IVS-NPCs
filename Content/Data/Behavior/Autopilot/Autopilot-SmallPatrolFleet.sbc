@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_SmallPatrolFleet_Autopilot</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Autopilot]
+
+                [IdealMinSpeed:20]
+                [IdealMaxSpeed:50]
+                [MaxSpeedTolerance:5]
+                [SlowDownOnWaypointApproach:true]
+                [ExtraSlowDownDistance:300]
+
+                [UseVelocityCollisionEvasion:true]
+                [CollisionEvasionWaypointDistance:300]
+                [CollisionEvasionResumeDistance:100]
+                [CollisionEvasionResumeTime:15]
+                [AvoidPlayerCollisions:true]
+
+                [FlyLevelWithGravity:false]
+                [LevelWithGravityWhenIdle:false]
+
+                [WaypointWaitTimeTrigger:10]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_SmallPatrolFleet_Combat_Autopilot</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Autopilot]
+
+                [IdealMinSpeed:100]
+                [IdealMaxSpeed:150]
+                [MaxSpeedTolerance:10]
+                [SlowDownOnWaypointApproach:false]
+                [OffsetSpaceMinDistFromTarget:1500]
+                [OffsetSpaceMaxDistFromTarget:2500]
+                [OffsetRecalculationTime:20]
+                [UseProjectileLeadPrediction:true]
+                [ExtraSlowDownDistance:300]
+
+                [UseVelocityCollisionEvasion:true]
+                [CollisionEvasionWaypointDistance:300]
+                [CollisionEvasionResumeDistance:100]
+                [CollisionEvasionResumeTime:15]
+                [AvoidPlayerCollisions:true]
+
+                [FlyLevelWithGravity:false]
+                [LevelWithGravityWhenIdle:false]
+
+                [WaypointWaitTimeTrigger:0]
+
+            </Description>
+
+        </EntityComponent>
+
+    </EntityComponents>
+</Definitions>

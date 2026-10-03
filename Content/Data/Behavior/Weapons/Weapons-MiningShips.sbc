@@ -21,5 +21,28 @@
             </Description>
         </EntityComponent>
 
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_SpaceCombatDrone_Weapons</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Weapons]
+
+                [UseStaticGuns:true]
+                [UseTurrets:true]
+
+                [MaxStaticWeaponRange:900]
+                [WeaponMaxAngleFromTarget:10]
+
+                [UseAmmoReplenish:true]
+                [AmmoReplenishClipAmount:2]
+                [MaxAmmoReplenishments:2]
+
+            </Description>
+
+        </EntityComponent>
+
     </EntityComponents>
 </Definitions>

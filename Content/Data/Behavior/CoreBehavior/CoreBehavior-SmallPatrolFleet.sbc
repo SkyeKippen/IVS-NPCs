@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_SmallPatrolFleet_Corvette_Behavior</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Behavior]
+                [BehaviorName:CargoShip]
+
+                [AutopilotData:VF_SmallPatrolFleet_Autopilot]
+                [SecondaryAutopilotData:VF_SmallPatrolFleet_Combat_Autopilot]
+                [TargetData:VF_SmallPatrolFleet_Target]
+                [WeaponSystem:VF_SmallPatrolFleet_Weapons]
+
+                [UseNoTargetTimer:true]
+                [NoTargetTimerTrigger:600]
+                [UsePlayerDistanceTimer:false]
+                [UseRetreatTimer:false]
+
+                [Triggers:VF_SmallPatrolFleet_Trigger_AcquiredTarget]
+                [Triggers:VF_SmallPatrolFleet_Trigger_LostTarget]
+                [Triggers:VF_SmallPatrolFleet_Trigger_ResumePatrol]
+
+                [HorseFighterEngageDistanceSpace:2000]
+                [HorseFighterDisengageDistanceSpace:2800]
+                [HorseFighterTimeApproaching:20]
+                [HorseFighterTimeEngaging:25]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_SmallPatrolFleet_Frigate_Behavior</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Behavior]
+                [BehaviorName:CargoShip]
+
+                [AutopilotData:VF_SmallPatrolFleet_Autopilot]
+                [SecondaryAutopilotData:VF_SmallPatrolFleet_Combat_Autopilot]
+                [TargetData:VF_SmallPatrolFleet_Target]
+                [WeaponSystem:VF_SmallPatrolFleet_Weapons]
+
+                [UseNoTargetTimer:true]
+                [NoTargetTimerTrigger:600]
+                [UsePlayerDistanceTimer:false]
+                [UseRetreatTimer:false]
+
+                [Triggers:VF_SmallPatrolFleet_Trigger_AcquiredTarget]
+                [Triggers:VF_SmallPatrolFleet_Trigger_LostTarget]
+                [Triggers:VF_SmallPatrolFleet_Trigger_ResumePatrol]
+
+                [HorseFighterEngageDistanceSpace:2000]
+                [HorseFighterDisengageDistanceSpace:2800]
+                [HorseFighterTimeApproaching:20]
+                [HorseFighterTimeEngaging:25]
+
+            </Description>
+
+        </EntityComponent>
+
+    </EntityComponents>
+</Definitions>

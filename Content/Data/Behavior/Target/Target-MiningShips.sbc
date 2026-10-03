@@ -31,5 +31,37 @@
 
         </EntityComponent>
 
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_SpaceCombatDrone_Target</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Target]
+
+                [UseCustomTargeting:true]
+                [Target:PlayerAndBlock]
+                [BlockTargets:Guns]
+                [BlockTargets:Turrets]
+                [BlockTargets:Power]
+
+                [MaxDistance:6000]
+                [MaxExistingTargetDistance:7000]
+                [NonBroadcastVisualRange:6000]
+
+                [MatchAllFilters:OutsideOfSafezone]
+                [MatchAllFilters:Owner]
+                [MatchAllFilters:Relation]
+                [MatchNoneFilters:Static]
+                [GetTargetBy:ClosestDistance]
+
+                [Owners:Player]
+                [Relations:Enemy]
+
+            </Description>
+
+        </EntityComponent>
+
     </EntityComponents>
 </Definitions>

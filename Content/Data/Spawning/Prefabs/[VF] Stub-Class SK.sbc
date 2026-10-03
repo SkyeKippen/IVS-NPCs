@@ -2,7 +2,7 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Prefabs>
     <Prefab xsi:type="MyObjectBuilder_PrefabDefinition">
-      <Id Type="MyObjectBuilder_PrefabDefinition" Subtype="[VF] Corvette 01" />
+      <Id Type="MyObjectBuilder_PrefabDefinition" Subtype="[VF] Stub-Class SK" />
       <CubeGrids>
         <CubeGrid>
           <SubtypeName />
@@ -21253,7 +21253,7 @@ Position={X:-1 Y:-1}
                               <AttachedPB>0</AttachedPB>
                               <IgnoreAllied>false</IgnoreAllied>
                               <IgnoreOther>true</IgnoreOther>
-                              <HudText />
+                              <HudText>Stub-Class SK</HudText>
                             </MyObjectBuilder_CubeBlock>
                             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
                               <SubtypeName>LargeGridBeamBlockHalf</SubtypeName>
@@ -30394,7 +30394,7 @@ Position={X:-1 Y:-1}
                       <AttachedPB>0</AttachedPB>
                       <IgnoreAllied>false</IgnoreAllied>
                       <IgnoreOther>true</IgnoreOther>
-                      <HudText />
+                      <HudText>Stub-Class SK</HudText>
                     </MyObjectBuilder_CubeBlock>
                     <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
                       <SubtypeName>LargeGridBeamBlockHalf</SubtypeName>
@@ -40250,7 +40250,7 @@ Position={X:-1 Y:-1}
               <AttachedPB>0</AttachedPB>
               <IgnoreAllied>false</IgnoreAllied>
               <IgnoreOther>true</IgnoreOther>
-              <HudText>Eris Class Corvette</HudText>
+              <HudText>Stub-Class SK</HudText>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeGridBeamBlockHalf</SubtypeName>
@@ -46432,7 +46432,7 @@ ToString());}</Program>
               </Blocks>
             </MyObjectBuilder_BlockGroup>
           </BlockGroups>
-          <DisplayName>[VF] Corvette 01</DisplayName>
+          <DisplayName>[VF] Stub-Class SK</DisplayName>
           <DestructibleBlocks>true</DestructibleBlocks>
           <CreatePhysics>false</CreatePhysics>
           <IsRespawnGrid>false</IsRespawnGrid>
