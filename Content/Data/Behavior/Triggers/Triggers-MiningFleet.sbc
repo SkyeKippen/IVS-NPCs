@@ -157,11 +157,13 @@
                 [ResetTriggerCooldownNames:VF_MiningFleet_Trigger_FrigateInbound]
                 [ResetTriggerCooldownNames:VF_MiningFleet_Trigger_DestroyerInbound]
                 [ResetTriggerCooldownNames:VF_MiningFleet_Trigger_CallMediumReinforcements]
+                [ResetTriggerCooldownNames:VF_MiningFleet_Trigger_BroadcastRally]
 
                 [EnableTriggers:true]
                 [EnableTriggerNames:VF_MiningFleet_Trigger_FrigateInbound]
                 [EnableTriggerNames:VF_MiningFleet_Trigger_DestroyerInbound]
                 [EnableTriggerNames:VF_MiningFleet_Trigger_CallMediumReinforcements]
+                [EnableTriggerNames:VF_MiningFleet_Trigger_BroadcastRally]
 
             </Description>
 
@@ -404,6 +406,63 @@
                 [BroadcastChatType:Chat]
                 [IgnoreAntennaRequirement:true]
                 [IgnoredAntennaRangeOverride:20000]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MiningFleet_Trigger_BroadcastRally</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Trigger]
+
+                [UseTrigger:false]
+                [Type:Timer]
+                [MinCooldownMs:10000]
+                [MaxCooldownMs:10000]
+                [MaxActions:-1]
+
+                [Actions:VF_MiningFleet_Action_BroadcastRally]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MiningFleet_Action_BroadcastRally</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Action]
+
+                [BroadcastCommandProfiles:true]
+                [CommandProfileIds:VF_MiningFleet_Command_Rally]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MiningFleet_Command_Rally</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Command]
+
+                [CommandCode:VF_MiningFleet_Rally]
+                [SendDamagerEntityId:true]
+                [MatchSenderReceiverOwners:true]
+                [IgnoreAntennaRequirement:true]
+                [IgnoreReceiverAntennaRequirement:true]
+                [Radius:20000]
 
             </Description>
 

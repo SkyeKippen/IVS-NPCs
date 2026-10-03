@@ -22,6 +22,7 @@
                 [Triggers:VF_MiningFleet_Trigger_FrigateInbound]
                 [Triggers:VF_MiningFleet_Trigger_DestroyerInbound]
                 [Triggers:VF_MiningFleet_Trigger_CallMediumReinforcements]
+                [Triggers:VF_MiningFleet_Trigger_BroadcastRally]
 
             </Description>
         </EntityComponent>

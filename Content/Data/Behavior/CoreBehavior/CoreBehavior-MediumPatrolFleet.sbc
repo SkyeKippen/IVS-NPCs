@@ -10,7 +10,7 @@
             <Description>
 
                 [RivalAI Behavior]
-                [BehaviorName:CargoShip]
+                [BehaviorName:HorseFighter]
 
                 [AutopilotData:VF_MediumPatrolFleet_Autopilot]
                 [SecondaryAutopilotData:VF_MediumPatrolFleet_Destroyer_Combat_Autopilot]
@@ -25,6 +25,8 @@
                 [Triggers:VF_MediumPatrolFleet_Trigger_AcquiredTarget]
                 [Triggers:VF_MediumPatrolFleet_Trigger_LostTarget]
                 [Triggers:VF_MediumPatrolFleet_Trigger_ResumePatrol]
+                [Triggers:VF_MediumPatrolFleet_Trigger_Reinforce]
+                [Triggers:VF_MediumPatrolFleet_Trigger_RallyReceived]
 
                 [HorseFighterEngageDistanceSpace:3000]
                 [HorseFighterDisengageDistanceSpace:3800]
@@ -43,7 +45,7 @@
             <Description>
 
                 [RivalAI Behavior]
-                [BehaviorName:CargoShip]
+                [BehaviorName:HorseFighter]
 
                 [AutopilotData:VF_MediumPatrolFleet_Autopilot]
                 [SecondaryAutopilotData:VF_MediumPatrolFleet_Corvette_Combat_Autopilot]
@@ -58,6 +60,8 @@
                 [Triggers:VF_MediumPatrolFleet_Trigger_AcquiredTarget]
                 [Triggers:VF_MediumPatrolFleet_Trigger_LostTarget]
                 [Triggers:VF_MediumPatrolFleet_Trigger_ResumePatrol]
+                [Triggers:VF_MediumPatrolFleet_Trigger_Reinforce]
+                [Triggers:VF_MediumPatrolFleet_Trigger_RallyReceived]
 
                 [HorseFighterEngageDistanceSpace:1500]
                 [HorseFighterDisengageDistanceSpace:2200]
