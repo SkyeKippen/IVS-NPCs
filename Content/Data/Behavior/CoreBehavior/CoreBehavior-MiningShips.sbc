@@ -18,6 +18,10 @@
 
                 [Triggers:VF_MiningFleet_Trigger_UnderAttack]
                 [Triggers:VF_MiningFleet_Trigger_UnderAttack_Escalation]
+                [Triggers:VF_MiningFleet_Trigger_CallReinforcements]
+                [Triggers:VF_MiningFleet_Trigger_FrigateInbound]
+                [Triggers:VF_MiningFleet_Trigger_DestroyerInbound]
+                [Triggers:VF_MiningFleet_Trigger_CallMediumReinforcements]
 
             </Description>
         </EntityComponent>
