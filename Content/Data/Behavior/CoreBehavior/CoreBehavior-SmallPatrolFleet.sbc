@@ -22,7 +22,7 @@
                 [UsePlayerDistanceTimer:false]
                 [UseRetreatTimer:false]
 
-                [Triggers:VF_SmallPatrolFleet_Trigger_AcquiredTarget]
+                [Triggers:VF_SmallPatrolFleet_Trigger_HasTarget]
                 [Triggers:VF_SmallPatrolFleet_Trigger_LostTarget]
                 [Triggers:VF_SmallPatrolFleet_Trigger_ResumePatrol]
 
@@ -55,7 +55,7 @@
                 [UsePlayerDistanceTimer:false]
                 [UseRetreatTimer:false]
 
-                [Triggers:VF_SmallPatrolFleet_Trigger_AcquiredTarget]
+                [Triggers:VF_SmallPatrolFleet_Trigger_HasTarget]
                 [Triggers:VF_SmallPatrolFleet_Trigger_LostTarget]
                 [Triggers:VF_SmallPatrolFleet_Trigger_ResumePatrol]
 
@@ -88,7 +88,7 @@
                 [UsePlayerDistanceTimer:false]
                 [UseRetreatTimer:false]
 
-                [Triggers:VF_SmallPatrolFleet_Trigger_AcquiredTarget]
+                [Triggers:VF_SmallPatrolFleet_Trigger_HasTarget]
                 [Triggers:VF_SmallPatrolFleet_Trigger_LostTarget]
                 [Triggers:VF_SmallPatrolFleet_Trigger_ResumePatrol]
                 [Triggers:VF_SmallPatrolFleet_Trigger_Reinforce]
@@ -123,7 +123,7 @@
                 [UsePlayerDistanceTimer:false]
                 [UseRetreatTimer:false]
 
-                [Triggers:VF_SmallPatrolFleet_Trigger_AcquiredTarget]
+                [Triggers:VF_SmallPatrolFleet_Trigger_HasTarget]
                 [Triggers:VF_SmallPatrolFleet_Trigger_LostTarget]
                 [Triggers:VF_SmallPatrolFleet_Trigger_ResumePatrol]
                 [Triggers:VF_SmallPatrolFleet_Trigger_Reinforce]
