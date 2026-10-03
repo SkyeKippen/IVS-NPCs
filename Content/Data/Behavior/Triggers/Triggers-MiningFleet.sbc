@@ -127,6 +127,226 @@
         <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
             <Id>
                 <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MiningFleet_Trigger_UnderAttack_Escalation</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Trigger]
+
+                [UseTrigger:true]
+                [Type:Damage]
+                [DamageTypes:Any]
+                [MaxActions:1]
+
+                [Actions:VF_MiningFleet_Action_StartEscalationTimers]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MiningFleet_Action_StartEscalationTimers</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Action]
+
+                [ResetCooldownTimeOfTriggers:true]
+                [ResetTriggerCooldownNames:VF_MiningFleet_Trigger_FrigateInbound]
+                [ResetTriggerCooldownNames:VF_MiningFleet_Trigger_DestroyerInbound]
+                [ResetTriggerCooldownNames:VF_MiningFleet_Trigger_CallMediumReinforcements]
+
+                [EnableTriggers:true]
+                [EnableTriggerNames:VF_MiningFleet_Trigger_FrigateInbound]
+                [EnableTriggerNames:VF_MiningFleet_Trigger_DestroyerInbound]
+                [EnableTriggerNames:VF_MiningFleet_Trigger_CallMediumReinforcements]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MiningFleet_Trigger_FrigateInbound</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Trigger]
+
+                [UseTrigger:false]
+                [Type:Timer]
+                [MinCooldownMs:150000]
+                [MaxCooldownMs:150000]
+                [MaxActions:1]
+
+                [Actions:VF_MiningFleet_Action_FrigateInbound]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MiningFleet_Action_FrigateInbound</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Action]
+
+                [UseChatBroadcast:true]
+                [ChatData:VF_MiningFleet_Chat_FrigateInbound]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MiningFleet_Chat_FrigateInbound</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Chat]
+
+                [UseChat:true]
+                [StartsReady:true]
+                [MaxChats:1]
+                [Author:Frigate Commander]
+                [Color:Red]
+                [ChatMessages:Mining fleet, this is your escort. We have your distress call and are closing on your position. Hold on.]
+                [BroadcastChatType:Chat]
+                [IgnoreAntennaRequirement:true]
+                [IgnoredAntennaRangeOverride:20000]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MiningFleet_Trigger_DestroyerInbound</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Trigger]
+
+                [UseTrigger:false]
+                [Type:Timer]
+                [MinCooldownMs:270000]
+                [MaxCooldownMs:270000]
+                [MaxActions:1]
+
+                [Actions:VF_MiningFleet_Action_DestroyerInbound]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MiningFleet_Action_DestroyerInbound</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Action]
+
+                [UseChatBroadcast:true]
+                [ChatData:VF_MiningFleet_Chat_DestroyerInbound]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MiningFleet_Chat_DestroyerInbound</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Chat]
+
+                [UseChat:true]
+                [StartsReady:true]
+                [MaxChats:1]
+                [Author:Destroyer Commander]
+                [Color:Red]
+                [ChatMessages:Destroyer group to mining fleet. We are on final approach to your sector. Keep them busy, we will be on top of them shortly.]
+                [BroadcastChatType:Chat]
+                [IgnoreAntennaRequirement:true]
+                [IgnoredAntennaRangeOverride:20000]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MiningFleet_Trigger_CallMediumReinforcements</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Trigger]
+
+                [UseTrigger:false]
+                [Type:Timer]
+                [MinCooldownMs:300000]
+                [MaxCooldownMs:300000]
+                [MaxActions:1]
+
+                [Actions:VF_MiningFleet_Action_CallMediumReinforcements]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MiningFleet_Action_CallMediumReinforcements</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Action]
+
+                [SpawnEncounter:true]
+                [Spawner:VF_MiningFleet_Spawner_MediumPatrolFleet]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MiningFleet_Spawner_MediumPatrolFleet</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Spawn]
+
+                [UseSpawn:true]
+                [SpawningType:CustomSpawn]
+                [SpawnGroups:VF_MediumPatrolFleet]
+                [MaxSpawns:1]
+                [MinDistance:5000]
+                [MaxDistance:6000]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
                 <SubtypeId>VF_SpaceCombatDrone_Trigger_HostileDetected</SubtypeId>
             </Id>
             <Description>

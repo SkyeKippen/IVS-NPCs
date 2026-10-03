@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MediumPatrolFleet_Destroyer_Behavior</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Behavior]
+                [BehaviorName:CargoShip]
+
+                [AutopilotData:VF_MediumPatrolFleet_Autopilot]
+                [SecondaryAutopilotData:VF_MediumPatrolFleet_Destroyer_Combat_Autopilot]
+                [TargetData:VF_MediumPatrolFleet_Target]
+                [WeaponSystem:VF_MediumPatrolFleet_Destroyer_Weapons]
+
+                [UseNoTargetTimer:true]
+                [NoTargetTimerTrigger:600]
+                [UsePlayerDistanceTimer:false]
+                [UseRetreatTimer:false]
+
+                [Triggers:VF_MediumPatrolFleet_Trigger_AcquiredTarget]
+                [Triggers:VF_MediumPatrolFleet_Trigger_LostTarget]
+                [Triggers:VF_MediumPatrolFleet_Trigger_ResumePatrol]
+
+                [HorseFighterEngageDistanceSpace:3000]
+                [HorseFighterDisengageDistanceSpace:3800]
+                [HorseFighterTimeApproaching:30]
+                [HorseFighterTimeEngaging:40]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MediumPatrolFleet_Corvette_Behavior</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Behavior]
+                [BehaviorName:CargoShip]
+
+                [AutopilotData:VF_MediumPatrolFleet_Autopilot]
+                [SecondaryAutopilotData:VF_MediumPatrolFleet_Corvette_Combat_Autopilot]
+                [TargetData:VF_MediumPatrolFleet_Target]
+                [WeaponSystem:VF_MediumPatrolFleet_Corvette_Weapons]
+
+                [UseNoTargetTimer:true]
+                [NoTargetTimerTrigger:600]
+                [UsePlayerDistanceTimer:false]
+                [UseRetreatTimer:false]
+
+                [Triggers:VF_MediumPatrolFleet_Trigger_AcquiredTarget]
+                [Triggers:VF_MediumPatrolFleet_Trigger_LostTarget]
+                [Triggers:VF_MediumPatrolFleet_Trigger_ResumePatrol]
+
+                [HorseFighterEngageDistanceSpace:1500]
+                [HorseFighterDisengageDistanceSpace:2200]
+                [HorseFighterTimeApproaching:15]
+                [HorseFighterTimeEngaging:20]
+
+            </Description>
+
+        </EntityComponent>
+
+    </EntityComponents>
+</Definitions>
