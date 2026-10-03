@@ -14,7 +14,7 @@
                 [UseStaticGuns:true]
                 [UseTurrets:true]
 
-                [MaxStaticWeaponRange:3000]
+                [MaxStaticWeaponRange:2000]
                 [WeaponMaxAngleFromTarget:5]
 
             </Description>
