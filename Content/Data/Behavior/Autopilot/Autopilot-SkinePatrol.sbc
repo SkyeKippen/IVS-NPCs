@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_SkinePatrol_Autopilot</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Autopilot]
+
+                [IdealMinSpeed:20]
+                [IdealMaxSpeed:50]
+                [MaxSpeedTolerance:5]
+                [SlowDownOnWaypointApproach:true]
+                [ExtraSlowDownDistance:500]
+
+                [UseVelocityCollisionEvasion:true]
+                [CollisionEvasionWaypointDistance:400]
+                [CollisionEvasionResumeDistance:150]
+                [CollisionEvasionResumeTime:15]
+                [AvoidPlayerCollisions:true]
+
+                [FlyLevelWithGravity:true]
+                [LevelWithGravityWhenIdle:true]
+
+                [WaypointWaitTimeTrigger:10]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_SkinePatrol_Combat_Autopilot</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Autopilot]
+
+                [IdealMinSpeed:60]
+                [IdealMaxSpeed:100]
+                [MaxSpeedTolerance:10]
+                [SlowDownOnWaypointApproach:false]
+                [OffsetSpaceMinDistFromTarget:2000]
+                [OffsetSpaceMaxDistFromTarget:3000]
+                [OffsetPlanetMinDistFromTarget:2000]
+                [OffsetPlanetMaxDistFromTarget:3000]
+                [OffsetPlanetMinTargetAltitude:500]
+                [OffsetPlanetMaxTargetAltitude:1000]
+                [OffsetRecalculationTime:25]
+                [UseProjectileLeadPrediction:true]
+                [ExtraSlowDownDistance:500]
+
+                [EngageDistanceSpace:2500]
+                [DisengageDistanceSpace:3200]
+                [EngageDistancePlanet:2500]
+                [DisengageDistancePlanet:3200]
+
+                [UseVelocityCollisionEvasion:true]
+                [CollisionEvasionWaypointDistance:400]
+                [CollisionEvasionResumeDistance:150]
+                [CollisionEvasionResumeTime:15]
+                [AvoidPlayerCollisions:true]
+
+                [FlyLevelWithGravity:false]
+                [LevelWithGravityWhenIdle:false]
+
+                [WaypointWaitTimeTrigger:0]
+
+            </Description>
+
+        </EntityComponent>
+
+    </EntityComponents>
+</Definitions>

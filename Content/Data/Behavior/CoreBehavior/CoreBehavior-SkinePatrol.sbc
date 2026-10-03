@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_SkinePatrol_Behavior</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Behavior]
+                [BehaviorName:CargoShip]
+
+                [AutopilotData:VF_SkinePatrol_Autopilot]
+                [SecondaryAutopilotData:VF_SkinePatrol_Combat_Autopilot]
+                [TargetData:VF_SkinePatrol_Target]
+                [WeaponSystem:VF_SkinePatrol_Weapons]
+
+                [UseNoTargetTimer:true]
+                [NoTargetTimerTrigger:600]
+                [UsePlayerDistanceTimer:false]
+                [UseRetreatTimer:false]
+
+                [Triggers:VF_SkinePatrol_Trigger_HasTarget]
+                [Triggers:VF_SkinePatrol_Trigger_LostTarget]
+                [Triggers:VF_SkinePatrol_Trigger_ResumePatrol]
+
+                [HorseFighterTimeApproaching:30]
+                [HorseFighterTimeEngaging:15]
+
+            </Description>
+
+        </EntityComponent>
+
+    </EntityComponents>
+</Definitions>
