@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MediumPatrolFleet_Autopilot</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Autopilot]
+
+                [IdealMinSpeed:20]
+                [IdealMaxSpeed:50]
+                [MaxSpeedTolerance:5]
+                [SlowDownOnWaypointApproach:true]
+                [ExtraSlowDownDistance:500]
+
+                [UseVelocityCollisionEvasion:true]
+                [CollisionEvasionWaypointDistance:400]
+                [CollisionEvasionResumeDistance:150]
+                [CollisionEvasionResumeTime:15]
+                [AvoidPlayerCollisions:true]
+
+                [FlyLevelWithGravity:false]
+                [LevelWithGravityWhenIdle:false]
+
+                [WaypointWaitTimeTrigger:10]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MediumPatrolFleet_Destroyer_Combat_Autopilot</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Autopilot]
+
+                [IdealMinSpeed:75]
+                [IdealMaxSpeed:125]
+                [MaxSpeedTolerance:10]
+                [SlowDownOnWaypointApproach:false]
+                [OffsetSpaceMinDistFromTarget:2500]
+                [OffsetSpaceMaxDistFromTarget:3500]
+                [OffsetRecalculationTime:30]
+                [UseProjectileLeadPrediction:true]
+                [ExtraSlowDownDistance:500]
+
+                [UseVelocityCollisionEvasion:true]
+                [CollisionEvasionWaypointDistance:400]
+                [CollisionEvasionResumeDistance:150]
+                [CollisionEvasionResumeTime:15]
+                [AvoidPlayerCollisions:true]
+
+                [FlyLevelWithGravity:false]
+                [LevelWithGravityWhenIdle:false]
+
+                [WaypointWaitTimeTrigger:0]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MediumPatrolFleet_Corvette_Combat_Autopilot</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Autopilot]
+
+                [IdealMinSpeed:100]
+                [IdealMaxSpeed:150]
+                [MaxSpeedTolerance:10]
+                [SlowDownOnWaypointApproach:false]
+                [OffsetSpaceMinDistFromTarget:1200]
+                [OffsetSpaceMaxDistFromTarget:2000]
+                [OffsetRecalculationTime:15]
+                [UseProjectileLeadPrediction:true]
+                [ExtraSlowDownDistance:300]
+
+                [UseVelocityCollisionEvasion:true]
+                [CollisionEvasionWaypointDistance:300]
+                [CollisionEvasionResumeDistance:100]
+                [CollisionEvasionResumeTime:15]
+                [AvoidPlayerCollisions:true]
+
+                [FlyLevelWithGravity:false]
+                [LevelWithGravityWhenIdle:false]
+
+                [WaypointWaitTimeTrigger:0]
+
+            </Description>
+
+        </EntityComponent>
+
+    </EntityComponents>
+</Definitions>

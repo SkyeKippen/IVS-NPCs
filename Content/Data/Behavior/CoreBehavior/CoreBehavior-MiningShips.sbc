@@ -17,6 +17,7 @@
                 [WeaponSystem:VF_MiningShips_Weapons]
 
                 [Triggers:VF_MiningFleet_Trigger_UnderAttack]
+                [Triggers:VF_MiningFleet_Trigger_UnderAttack_Escalation]
 
             </Description>
         </EntityComponent>
