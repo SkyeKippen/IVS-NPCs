@@ -124,5 +124,69 @@
 
         </EntityComponent>
 
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MediumPatrolFleet_Trigger_Reinforce</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Trigger]
+
+                [UseTrigger:true]
+                [Type:Session]
+                [MaxActions:1]
+
+                [Actions:VF_MediumPatrolFleet_Action_EngageTarget]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MediumPatrolFleet_Trigger_RallyReceived</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Trigger]
+
+                [UseTrigger:true]
+                [Type:CommandReceived]
+                [CommandReceiveCode:VF_MiningFleet_Rally]
+                [MaxActions:-1]
+
+                [Actions:VF_MediumPatrolFleet_Action_RallyToAttacker]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_MediumPatrolFleet_Action_RallyToAttacker</SubtypeId>
+            </Id>
+            <Description>
+
+                [RivalAI Action]
+
+                [SwitchToReceivedTarget:true]
+                [InheritLastAttackerFromCommand:true]
+
+                [ChangeBehaviorSubclass:true]
+                [NewBehaviorSubclass:HorseFighter]
+
+                [ChangeAutopilotProfile:true]
+                [AutopilotProfile:Secondary]
+
+                [DisableTriggers:true]
+                [DisableTriggerNames:VF_MediumPatrolFleet_Trigger_ResumePatrol]
+
+            </Description>
+
+        </EntityComponent>
+
     </EntityComponents>
 </Definitions>

@@ -31,7 +31,7 @@
                         <Z>0.0</Z>
                     </Position>
                     <Speed>0</Speed>
-                    <Behaviour>VF_SmallPatrolFleet_Frigate_Behavior</Behaviour>
+                    <Behaviour>VF_SmallPatrolFleet_Frigate_Reinforcement_Behavior</Behaviour>
                 </Prefab>
                 <Prefab SubtypeId="[VF] Stub-Class SK">
                     <Position>
@@ -40,7 +40,7 @@
                         <Z>-100.0</Z>
                     </Position>
                     <Speed>0</Speed>
-                    <Behaviour>VF_SmallPatrolFleet_Corvette_Behavior</Behaviour>
+                    <Behaviour>VF_SmallPatrolFleet_Corvette_Reinforcement_Behavior</Behaviour>
                 </Prefab>
                 <Prefab SubtypeId="[VF] Stub-Class SK">
                     <Position>
@@ -49,7 +49,7 @@
                         <Z>-100.0</Z>
                     </Position>
                     <Speed>0</Speed>
-                    <Behaviour>VF_SmallPatrolFleet_Corvette_Behavior</Behaviour>
+                    <Behaviour>VF_SmallPatrolFleet_Corvette_Reinforcement_Behavior</Behaviour>
                 </Prefab>
             </Prefabs>
         </SpawnGroup>
