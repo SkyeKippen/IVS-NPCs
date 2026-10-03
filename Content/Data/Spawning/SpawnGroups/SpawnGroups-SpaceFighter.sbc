@@ -22,7 +22,7 @@
 
             </Description>
             <IsPirate>true</IsPirate> <!--Do not edit-->
-            <Frequency>1.0</Frequency>
+            <Frequency>0</Frequency>
             <Prefabs>
                 <Prefab SubtypeId="[VF] SF-01">
                     <Position>
