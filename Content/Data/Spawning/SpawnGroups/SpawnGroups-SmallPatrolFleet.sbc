@@ -54,5 +54,57 @@
             </Prefabs>
         </SpawnGroup>
 
+        <SpawnGroup>
+            <Id>
+                <TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+                <SubtypeId>VF_SmallPatrolFleet_Cargo</SubtypeId>
+            </Id>
+            <Description>
+
+                [Modular Encounters SpawnGroup]
+
+                [UseRivalAi:true]
+                [RivalAiReplaceRemoteControl:true]
+
+                [ReplenishSystems:true]
+
+                [SpawnConditionsProfiles:VF_SmallPatrolFleet_Cargo_SpawnConditions]
+
+                [ManipulationProfiles:VF_SmallPatrolFleet_Manipulations]
+
+            </Description>
+            <IsPirate>true</IsPirate> <!--Do not edit-->
+            <Frequency>5.0</Frequency>
+            <Prefabs>
+                <Prefab SubtypeId="[VF] Hammerhead-Class SFF">
+                    <Position>
+                        <X>0.0</X>
+                        <Y>0.0</Y>
+                        <Z>0.0</Z>
+                    </Position>
+                    <Speed>0</Speed>
+                    <Behaviour>VF_SmallPatrolFleet_Frigate_Behavior</Behaviour>
+                </Prefab>
+                <Prefab SubtypeId="[VF] Stub-Class SK">
+                    <Position>
+                        <X>-500.0</X>
+                        <Y>0.0</Y>
+                        <Z>-100.0</Z>
+                    </Position>
+                    <Speed>0</Speed>
+                    <Behaviour>VF_SmallPatrolFleet_Corvette_Behavior</Behaviour>
+                </Prefab>
+                <Prefab SubtypeId="[VF] Stub-Class SK">
+                    <Position>
+                        <X>500.0</X>
+                        <Y>0.0</Y>
+                        <Z>-100.0</Z>
+                    </Position>
+                    <Speed>0</Speed>
+                    <Behaviour>VF_SmallPatrolFleet_Corvette_Behavior</Behaviour>
+                </Prefab>
+            </Prefabs>
+        </SpawnGroup>
+
     </SpawnGroups>
 </Definitions>
