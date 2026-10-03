@@ -11,8 +11,24 @@
 
                 [MES Spawn Conditions]
 
-                [SpaceCargoShip:true]
                 [RivalAiSpaceSpawn:true]
+
+                [FactionOwner:VF]
+
+            </Description>
+
+        </EntityComponent>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>VF_SmallPatrolFleet_Cargo_SpawnConditions</SubtypeId>
+            </Id>
+            <Description>
+
+                [MES Spawn Conditions]
+
+                [SpaceCargoShip:true]
 
                 [UseThreatLevelCheck:true]
                 [ThreatScoreMinimum:1500]
