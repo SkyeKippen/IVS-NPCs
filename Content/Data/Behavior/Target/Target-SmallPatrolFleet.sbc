@@ -19,8 +19,8 @@
                 [BlockTargets:Thrusters]
                 [BlockTargets:Gyros]
 
-                [MaxDistance:6000]
-                [MaxExistingTargetDistance:12000]
+                [MaxDistance:8000]
+                [MaxExistingTargetDistance:14000]
 
                 [MatchAllFilters:OutsideOfSafezone]
                 [MatchAllFilters:Owner]
