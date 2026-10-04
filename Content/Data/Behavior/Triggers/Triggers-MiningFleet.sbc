@@ -437,7 +437,6 @@
                 [Color:Red]
                 [ChatMessages:Hostile detected.]
                 [BroadcastChatType:Chat]
-
                 [IgnoreAntennaRequirement:true]
                 [IgnoredAntennaRangeOverride:20000]
 
