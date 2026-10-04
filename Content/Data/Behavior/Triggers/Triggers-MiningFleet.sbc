@@ -56,10 +56,21 @@
                 [UseChat:true]
                 [StartsReady:true]
                 [MaxChats:1]
+                [BroadcastRandomly:true]
                 [Author:Mining Fleet Commander]
                 [Color:Red]
                 [ChatMessages:Mayday! Mining fleet is under attack! Requesting immediate assistance!]
                 [BroadcastChatType:Chat]
+
+                [ChatMessages:This is the mining fleet, we are taking fire! Any friendly ships, please respond!]
+                [BroadcastChatType:Chat]
+
+                [ChatMessages:Hostiles engaging the mining operation! We need escorts here now!]
+                [BroadcastChatType:Chat]
+
+                [ChatMessages:Mining fleet to all nearby vessels, we are under attack and cannot hold out long! Send help!]
+                [BroadcastChatType:Chat]
+
                 [IgnoreAntennaRequirement:true]
                 [IgnoredAntennaRangeOverride:20000]
 
@@ -218,10 +229,21 @@
                 [UseChat:true]
                 [StartsReady:true]
                 [MaxChats:1]
+                [BroadcastRandomly:true]
                 [Author:Frigate Commander]
                 [Color:Red]
                 [ChatMessages:Mining fleet, this is your escort. We have your distress call and are closing on your position. Hold on.]
                 [BroadcastChatType:Chat]
+
+                [ChatMessages:Frigate escort responding. We are inbound to your coordinates, keep your heads down.]
+                [BroadcastChatType:Chat]
+
+                [ChatMessages:Copy your mayday, mining fleet. Frigates are burning hard toward you, stay together.]
+                [BroadcastChatType:Chat]
+
+                [ChatMessages:Escort group here. Weapons hot and en route, we will be on station shortly.]
+                [BroadcastChatType:Chat]
+
                 [IgnoreAntennaRequirement:true]
                 [IgnoredAntennaRangeOverride:20000]
 
@@ -278,10 +300,21 @@
                 [UseChat:true]
                 [StartsReady:true]
                 [MaxChats:1]
+                [BroadcastRandomly:true]
                 [Author:Destroyer Commander]
                 [Color:Red]
                 [ChatMessages:Destroyer group to mining fleet. We are on final approach to your sector. Keep them busy, we will be on top of them shortly.]
                 [BroadcastChatType:Chat]
+
+                [ChatMessages:Destroyer group inbound. Mining fleet, hold your position, heavy guns are almost in range.]
+                [BroadcastChatType:Chat]
+
+                [ChatMessages:This is the destroyer group. We are closing fast on your attackers, they will regret picking this fight.]
+                [BroadcastChatType:Chat]
+
+                [ChatMessages:Destroyers on approach to your sector. Keep pulling back, we will take it from here.]
+                [BroadcastChatType:Chat]
+
                 [IgnoreAntennaRequirement:true]
                 [IgnoredAntennaRangeOverride:20000]
 
@@ -404,6 +437,7 @@
                 [Color:Red]
                 [ChatMessages:Hostile detected.]
                 [BroadcastChatType:Chat]
+
                 [IgnoreAntennaRequirement:true]
                 [IgnoredAntennaRangeOverride:20000]
 
