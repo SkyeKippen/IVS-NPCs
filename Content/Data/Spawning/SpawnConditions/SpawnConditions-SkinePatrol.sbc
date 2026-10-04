@@ -14,7 +14,7 @@
                 [SpaceCargoShip:true]
                 [LunarCargoShip:true]
                 [GravityCargoShip:true]
-                [PlanetaryCargoShip:true]
+                [AtmosphericCargoShip:true]
 
                 [FactionOwner:VF]
 
