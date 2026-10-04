@@ -11,8 +11,10 @@
 
                 [MES Spawn Conditions]
 
+                [SpaceCargoShip:true]
                 [LunarCargoShip:true]
                 [GravityCargoShip:true]
+                [PlanetaryCargoShip:true]
 
                 [FactionOwner:VF]
 
