@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <SpawnGroups>
+
+        <SpawnGroup>
+            <Id>
+                <TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+                <SubtypeId>VF_SkinePatrol_Cargo</SubtypeId>
+            </Id>
+            <Description>
+
+                [Modular Encounters SpawnGroup]
+
+                [UseRivalAi:true]
+                [RivalAiReplaceRemoteControl:true]
+
+                [ReplenishSystems:true]
+
+                [SpawnConditionsProfiles:VF_SkinePatrol_Cargo_SpawnConditions]
+
+                [ManipulationProfiles:VF_SkinePatrol_Manipulations]
+                [ManipulationProfiles:VF_Global_TurretManipulations]
+
+            </Description>
+            <IsPirate>true</IsPirate> <!--Do not edit-->
+            <Frequency>5.0</Frequency>
+            <Prefabs>
+                <Prefab SubtypeId="[VF] Skine-Class LPC">
+                    <Position>
+                        <X>0.0</X>
+                        <Y>0.0</Y>
+                        <Z>0.0</Z>
+                    </Position>
+                    <Speed>0</Speed>
+                    <Behaviour>VF_SkinePatrol_Behavior</Behaviour>
+                </Prefab>
+            </Prefabs>
+        </SpawnGroup>
+
+    </SpawnGroups>
+</Definitions>
