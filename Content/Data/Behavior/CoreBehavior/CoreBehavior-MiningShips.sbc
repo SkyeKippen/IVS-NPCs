@@ -15,6 +15,7 @@
                 [AutopilotData:VF_MiningShipCommander_Autopilot]
                 [TargetData:VF_MiningShips_Target]
                 [WeaponSystem:VF_MiningShips_Weapons]
+                [RetreatDespawnDistance:10000]
 
                 [Triggers:VF_MiningFleet_Trigger_UnderAttack]
                 [Triggers:VF_MiningFleet_Trigger_UnderAttack_Escalation]
@@ -43,6 +44,7 @@
                 [SecondaryAutopilotData:VF_SpaceCombatDrone_Autopilot]
                 [TargetData:VF_SpaceCombatDrone_Target]
                 [WeaponSystem:VF_SpaceCombatDrone_Weapons]
+                [RetreatDespawnDistance:10000]
 
                 [Triggers:VF_SpaceCombatDrone_Trigger_HostileDetected]
 
