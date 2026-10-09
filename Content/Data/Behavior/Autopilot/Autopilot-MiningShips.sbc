@@ -23,6 +23,8 @@
                 [IdealMinSpeed:10]
                 [MaxSpeedTolerance:3]
 
+                [AngleAllowedForForwardThrust:10]
+
             </Description>
 
         </EntityComponent>
