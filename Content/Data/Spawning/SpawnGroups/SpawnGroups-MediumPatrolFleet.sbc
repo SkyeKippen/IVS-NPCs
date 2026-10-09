@@ -23,7 +23,7 @@
 
             </Description>
             <IsPirate>true</IsPirate> <!--Do not edit-->
-            <Frequency>0</Frequency>
+            <Frequency>5.0</Frequency> <!--Must be above 0 or the commander's spawn request finds no eligible group-->
             <Prefabs>
                 <Prefab SubtypeId="[VF] Arterin-Class SDD">
                     <Position>

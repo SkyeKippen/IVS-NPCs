@@ -9,6 +9,8 @@ Errors (exit code 1):
   - a reference to a name that is not defined
   - a reference to a name defined as the wrong kind (e.g. [Triggers:] naming an Action)
   - the same name defined twice
+  - a RivalAI Spawn profile naming a SpawnGroup whose <Frequency> is 0 (MES
+    skips Frequency 0 groups, so the spawn silently fails)
 Warnings (exit code 0):
   - profiles and prefabs that nothing references
 """
@@ -84,6 +86,8 @@ def main():
     refs = []       # (expected kind, name, file, how)
     errors = []
     warnings = []
+    frequencies = {}  # spawn group name -> <Frequency>
+    spawner_groups = []  # (spawn group name, file) named by a RivalAI Spawn profile
 
     def define(name, kind, path):
         if name in defs:
@@ -124,11 +128,18 @@ def main():
                     if not name or not kind:
                         continue
                     define(name, kind, path)
+                    if kind_tag == "SpawnGroup":
+                        try:
+                            frequencies[name] = float((el.findtext("Frequency") or "0").strip())
+                        except ValueError:
+                            frequencies[name] = 0.0
                     for key, value in TAG_RE.findall(desc):
                         if key in REF_KEYS:
                             for v in value.split(","):
                                 if v.strip():
                                     refs.append((REF_KEYS[key], v.strip(), path, "[%s:]" % key))
+                                    if kind == "Spawn" and key == "SpawnGroups":
+                                        spawner_groups.append((v.strip(), path))
                         elif key == "FactionOwner" and value.strip() not in BUILTIN_FACTIONS:
                             refs.append(("Faction", value.strip(), path, "[FactionOwner:]"))
                     if kind_tag == "SpawnGroup":
@@ -147,6 +158,11 @@ def main():
         elif defs[name][0] != kind:
             errors.append("%s: %s refers to '%s', which is a %s, not a %s (%s)"
                           % (path, how, name, defs[name][0], kind, defs[name][1]))
+
+    for name, path in spawner_groups:
+        if name in frequencies and frequencies[name] <= 0:
+            errors.append("%s: [SpawnGroups:] names '%s', whose <Frequency> is 0, so MES will never spawn it"
+                          % (path, name))
 
     for name, (kind, path) in sorted(defs.items(), key=lambda d: (d[1][1], d[0])):
         if name not in used and kind not in ROOT_KINDS:
