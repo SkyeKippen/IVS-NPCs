@@ -20,6 +20,7 @@
                 [NoTargetTimerTrigger:300]
                 [UsePlayerDistanceTimer:false]
                 [UseRetreatTimer:false]
+                [RetreatDespawnDistance:10000]
 
             </Description>
 

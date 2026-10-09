@@ -21,6 +21,7 @@
                 [NoTargetTimerTrigger:600]
                 [UsePlayerDistanceTimer:false]
                 [UseRetreatTimer:false]
+                [RetreatDespawnDistance:10000]
 
                 [Triggers:VF_MediumPatrolFleet_Trigger_HasTarget]
                 [Triggers:VF_MediumPatrolFleet_Trigger_LostTarget]
@@ -56,6 +57,7 @@
                 [NoTargetTimerTrigger:600]
                 [UsePlayerDistanceTimer:false]
                 [UseRetreatTimer:false]
+                [RetreatDespawnDistance:10000]
 
                 [Triggers:VF_MediumPatrolFleet_Trigger_HasTarget]
                 [Triggers:VF_MediumPatrolFleet_Trigger_LostTarget]

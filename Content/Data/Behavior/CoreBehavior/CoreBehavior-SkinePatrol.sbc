@@ -21,6 +21,7 @@
                 [NoTargetTimerTrigger:600]
                 [UsePlayerDistanceTimer:false]
                 [UseRetreatTimer:false]
+                [RetreatDespawnDistance:10000]
 
                 [Triggers:VF_SkinePatrol_Trigger_HasTarget]
                 [Triggers:VF_SkinePatrol_Trigger_LostTarget]
